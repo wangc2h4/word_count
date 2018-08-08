@@ -27,3 +27,6 @@ def count(request):
                   {'count': total_count, 'text': user_text,
                    'dict': word_dict, 'sorted': sorted_dict})
     # 获得发出的请求request后反馈
+
+def about(request):
+    return render(request,'about.html')
